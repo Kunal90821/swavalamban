@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="shortcut icon" href="../images/logo.png" />
+</head>
+<body>
+     <div id="blur">
+     <div class="contact">
+     <div class="content">
+            <h1>Contact Us</h1>
+            <p>Always humans never bots. The Hands-Down sharpest and friendliest support team. Contact Us and we'll get 
+               back to you as soon as possible.</p>
+        </div>
+        </div>
+
+<div class="container">
+             <div class="ContactInfo">
+                <div class="box">
+                     <div class="icon"><i class="fa fa-map" aria-hidden="true"></i></div>
+                     <div class="text1">
+                            <h3>Address</h3>
+                            <p>NH-58,Partapur, Meerut,<br/>Uttar Pradesh,<br> 250103</p>
+                     </div>
+                </div> 
+                
+
+
+                <div class="box">
+                     <div class="icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div>
+                     <div class="text1">
+                          <h3>Phone</h3>
+                          <p>+91 73008 66603</p>
+                     </div>
+                </div>
+                 <div class="box">
+                     <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                     <div class="text1">
+                          <h3>Email</h3>
+                          <p><a class="mail" href="mailto:ecell.dvsgi@gmail.com">ecell.dvsgi@gmail.com</a></p>
+                     </div>
+                </div>  
+             </div>
+          </div>
+        <br/> 
+     <div class="query_form">
+          <h3>Submit your queries<a href="#" onclick="toggle_que()">Here</a></h3>
+     </div>
+
+    
+     <div class="vl"></div>
+     <div class="nomination_form">
+          <h3>Do you want to join us?<a href="https://forms.gle/yFbPKcwmszLEMe2b8" target="blank">Click Here</a></h3>
+     </div>     
+
+
+
+<br/><br/>
+     
+     <div class="wrapper">
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span><a class="links" href="https://www.facebook.com/DewanVSGrp/?ref=hl." target="blank">Facebook</a></span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-twitter"></i>
+            </div>
+            <span><a class="links" href="https://twitter.com/dewangrp" target="blank">Twitter</a></span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span><a class="links" href="https://www.instagram.com/dvsgi/" target="blank">Instagram</a></span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-linkedin"></i>
+            </div>
+            <span><a class="links" href="https://www.linkedin.com/company/dewangroup/" target="blank">Linkedin</a></span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-youtube"></i>
+            </div>
+            <span><a class="links" href="https://www.youtube.com/channel/UCgeFlJ-57jBPVz-9dyqjfFA" target="blank">YouTube</a></span>
+         </div>
+      </div>
+      </div>
+
+       <div id="popup">
+          <div class="ContactForm">
+                 <form action="mail.php" method="post">
+                     <h2>Send Message</h2>
+                     <div class="InputBox">
+                          <input type="text1" name="name" required="required">
+                          <span>Full Name</span>
+                     </div>
+                     <div class="InputBox">
+                          <input type="text1" name="email" required="required">
+                          <span>Email</span>
+                     </div>
+                     <div class="InputBox">
+                          <textarea name="message" required="required"></textarea>
+                          <span>Type your Message....</span>
+                     </div>
+                     <div class="InputBox">
+                        <input type="submit" value="Send">
+                          <a href="#" onclick="toggle_que()">Close</a>
+                     </div>
+                 </form>
+               </div>
+          </div>
+
+     <script type="text/javascript">
+          function toggle_que(){
+               var blur = document.getElementById('blur');
+               blur.classList.toggle('active')
+               var popup1 = document.getElementById('popup');
+               popup1.classList.toggle('active')
+          }
+     </script>      
+</body>
+</html>

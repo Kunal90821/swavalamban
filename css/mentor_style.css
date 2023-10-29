@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f0f0f0;
+  font-size: 62.5%;
+}
+body {
+  color: #999999;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings:"liga" on;
+  -moz-font-feature-settings: "liga" on;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  font-size: 5rem;
+}
+h3{
+  color: #999999;
+  font-weight: 300;
+  font-family: Helvetica;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding:0;
+  padding-left: 6rem;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: rgb(254, 254, 254);
+  border-radius: 0.25rem;
+  width:35rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+.card__content {
+  
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  width:35rem;
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.card__image--flowers {
+  background-image: url(../images/mentors/Vievek\ Dewan\ sir.jpg);
+}
+.card__image--river {
+  background-image: url(../images/mentors/Naresh\ Goyal\ Sir.jpg);
+}
+.card__image--record {
+  background-image: url(../images/mentors/Shruti\ maam.jpeg);
+}
+.card__image--fence {
+  background-image: url(../images/mentors/Vievek\ Dewan\ sir.jpg);
+}
+.card__title {
+  color: #696969;
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+@media(max-width:2560px)
+{
+  html{
+    font-size: 100%;
+  }
+  .card{
+    margin-left: 4rem;
+  }
+  .cards__item {
+    width: 33%;
+  }
+}
+
+@media(max-width:1920px)
+{
+  html{
+    font-size: 80%;
+  }
+  .card{
+    margin-left: 3rem;
+  }
+}
+
+@media(max-width:1440px)
+{
+  html{
+    font-size: 65%;
+  }
+  .card{
+    margin-left: 1rem;
+  }
+}
+
+@media(max-width:1366px)
+{
+  html{
+    font-size: 55%;
+  }
+  .card{
+    margin-left: 4rem;
+  }
+}
+
+@media(max-width:1024px)
+{
+  html{
+    font-size: 50%;
+  }
+  .card{
+    margin-left: -1rem;
+  }
+}
+
+ @media(max-width:912px)
+{
+  html{
+    font-size: 50%;
+  }
+  .card {
+    margin-left: 5rem;
+  }
+  .cards__item {
+    width: 50%;
+  }
+} 
+ @media(max-width:768px)
+{
+  html{
+    font-size: 45%;
+  }
+  .card {
+    margin-left: 3rem;
+  }
+  .cards__item {
+    width: 50%;
+  }
+} 
+ @media(max-width:580px)
+{
+  .card {
+    margin-left: 10rem;
+  }
+  .cards__item {
+    width: 100%;
+  }
+} 
+
+@media(max-width:425px)
+{
+  html{
+    font-size: 45%;
+  }
+  .card {
+    margin-left: 5rem;
+  }
+  .cards__item {
+    width: 100%;
+  }
+} 
+
+@media(max-width:375px)
+{
+  .card {
+    margin-left: 2rem;
+  }
+} 
+
+@media(max-width:320px)
+{
+  .card {
+    margin-left: -2.5rem;
+  }
+} 

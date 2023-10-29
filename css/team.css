@@ -1,0 +1,276 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    transition: 0.5s;
+    font-family: 'Jost', sans-serif;
+    background: rgb(255, 255, 252);
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+}
+/*#fix{
+    height: 410px;
+}*/
+
+.card {
+    width: 300px;
+    height: 450px;
+    background: transparent;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 70px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+
+.card:hover {
+    box-shadow: 0px 0px 1rem 1px #9592927a;
+}
+
+.bg {
+    width: 90%;
+    transform: rotate(90deg);
+    align-items: center;
+    
+    /*margin-left: 20px;*/
+}
+
+.one {
+    width: 80%;
+    position: absolute;
+    top: 1rem;
+    background: transparent;
+    left: 1rem;
+}
+
+.card:hover .bg {
+    transform: rotate(120deg);
+}
+
+.card h3 {
+    text-align: center;
+    z-index: 9999;
+    color: #222;
+    position: relative;
+    cursor: pointer;
+}
+
+.card h4 {
+    text-align: center;
+    z-index: 9999;
+    position: relative;
+    color: grey;
+}
+
+.icon {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.icon ion-icon {
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    
+    color: #fff;
+    
+    opacity: 0;
+}
+#color1 ion-icon{
+    background: #066eb1;
+    
+}
+ #color1 ion-icon:hover{
+     color: grey;
+     border: 1px solid #066eb1;
+     background: transparent;
+
+}
+
+#color2 ion-icon {
+    background: #0a4484;
+
+}
+
+#color2 ion-icon:hover {
+    color: grey;
+    border: 1px solid #0a4484;
+    background: transparent;
+
+}
+
+#color3 ion-icon {
+    background: #161f31;
+
+}
+
+#color3 ion-icon:hover {
+    color: grey;
+    border: 1px solid #161f31;
+    background: transparent;
+
+}
+
+
+#color4 ion-icon {
+    background: #183330;
+
+}
+
+#color4 ion-icon:hover {
+    color: grey;
+    border: 1px solid #183330;
+    background: transparent;
+
+}
+
+#color5 ion-icon {
+    background: rgba(207, 53, 53, 0.863);
+
+}
+
+#color5 ion-icon:hover {
+    color: grey;
+    border: 1px solid rgba(207, 53, 53, 0.863);
+    background: transparent;
+
+}
+
+#color6 ion-icon {
+    background: rgba(202, 202, 98, 0.938);
+
+}
+
+#color6 ion-icon:hover {
+    color: grey;
+    border: 1px solid rgba(202, 202, 98, 0.938);
+    background: transparent;
+
+}
+
+#color7 ion-icon {
+    background: #b88e7f;
+
+}
+
+#color7 ion-icon:hover {
+    color: grey;
+    border: 1px solid #b88e7f;
+    background: transparent;
+
+}
+
+#color8 ion-icon {
+    background: rgb(145, 10, 10);
+
+}
+
+#color8 ion-icon:hover {
+    color: grey;
+    border: 1px solid rgb(145, 10, 10);
+    background: transparent;
+
+}
+
+#color9 ion-icon {
+    background: #16121b;
+
+}
+
+#color9 ion-icon:hover {
+    color: grey;
+    border: 1px solid #16121b;
+    background: transparent;
+
+}
+
+#color10 ion-icon {
+    background: #ff748c;
+
+}
+
+#color10 ion-icon:hover {
+    color: grey;
+    border: 1px solid #ff748c;
+    background: transparent;
+
+}
+
+
+
+.icon ion-icon:hover {
+    color: grey;
+    border: 1px solid grey;
+    background: transparent;
+}
+
+.card:hover .icon ion-icon {
+    opacity: 1;
+}
+
+/* put @media screen and (max-width: 1460px) if facing any problem in responsiveness of this web page*/
+
+@media screen and (max-width: 1802px) {
+    .container{
+        width: 100%;
+        
+    }
+    .card{
+        width: 17%;
+        height: 25%;
+        margin-left: 7%;
+    }
+    
+    .icon ion-icon {
+        font-size: 100%;
+        padding: 3%;
+    }
+    .icon{
+        padding-bottom: 10%;
+    }
+    .card h3{
+        font-size: 90%;
+    }
+    .card h4{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 836px){
+    .card{
+        width: 80%;
+        
+        margin-left: 10%;
+    }
+    .icon ion-icon{
+        font-size: 130%;
+        padding: 4%;
+    }
+    h1{
+        font-size: 250%;
+    }
+    .card h3{
+        font-size: 120%;
+    }
+    .card h4{
+        font-size: 100%;
+    }
+
+}
